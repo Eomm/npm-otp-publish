@@ -33,6 +33,9 @@ inputs:
     description: 'release team to assign the issue'
     required: false
     default: 'github-issue'
+  discord_channel_id:
+    description: 'send the notification to this Discord Channel'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -44,3 +47,4 @@ runs:
     - '--notifier=${{ inputs.notifier }}'
     - '--github-actor=${{ inputs.actor }}'
     - '--github-release-team=${{ inputs.release_team }}'
+    - '--discord-channel-id=${{ inputs.discord_channel_id }}'

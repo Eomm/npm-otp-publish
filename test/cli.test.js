@@ -19,6 +19,16 @@ test('--github-token is required on github-issue', t => {
   )
 })
 
+test('--discord-channel-id is required on discord', t => {
+  t.plan(1)
+  getOptions([
+    '--npm-token=token1',
+    '--notifier=discord'
+  ]).then(t.fail, err =>
+    t.ok(err.output.match(/--discord-channel-id is required with `discord` notifier/))
+  )
+})
+
 test('passing all arguments should succeed', async t => {
   const args = await getOptions([
     '--npm-user=user',
@@ -27,7 +37,8 @@ test('passing all arguments should succeed', async t => {
     '--version-url=httpsurl',
     '--notifier=console',
     '--actor=me',
-    '--release-team=team'
+    '--release-team=team',
+    '--discord-channel-id=12345'
   ])
   t.equal(args.npmUser, 'user')
   t.equal(args.npmToken, 'token1')
@@ -36,6 +47,7 @@ test('passing all arguments should succeed', async t => {
   t.equal(args.notifier, 'console')
   t.equal(args.actor, 'me')
   t.equal(args.releaseTeam, 'team')
+  t.equal(args.discordChannelId, '12345')
 })
 
 test('passing invalid arguments to notifier should fail', t => {
