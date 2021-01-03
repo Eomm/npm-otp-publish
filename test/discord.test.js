@@ -91,19 +91,11 @@ test('should create and close issue', async t => {
   const wss = fastify()
   wss.register(fastifyWebSocket, {
     handle (conn) {
-      conn.socket.on('end', () => {
-        console.log('onEnd says nothing')
-      })
-
       conn.write(getNextWssReply()) // send hello
       conn.write(getNextWssReply()) // send server status
 
-      // console.log(conn)
       conn.socket.on('message', (message) => {
         conn.write(getNextWssReply())
-        // if (messages.length === 0) {
-        //   setTimeout(() => { conn.destroy() }, 1000)
-        // }
       })
     }
   })
@@ -121,19 +113,8 @@ test('should create and close issue', async t => {
         max_concurrency: 1
       }
     })
-
-  const scope2 = nock('https://discord.com/api ')
     .post('/v7/channels/12345/messages')
-    .reply(201, {
-      url: 'ws://127.0.0.1:3000/',
-      shards: 9,
-      session_start_limit: {
-        total: 1000,
-        remaining: 999,
-        reset_after: 14400000,
-        max_concurrency: 1
-      }
-    })
+    .reply(201, {})
 
   const config = {
     repo: {
@@ -152,9 +133,6 @@ test('should create and close issue', async t => {
   await notifier.end()
   await wss.close()
   scope.done()
-  scope2.done()
   t.ok(true)
   t.end()
-
-  process.exit(0) // something is pending
 })
