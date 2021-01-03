@@ -25,6 +25,17 @@ test('--discord-channel-id is required on discord', t => {
     '--npm-token=token1',
     '--notifier=discord'
   ]).then(t.fail, err =>
+    t.ok(err.output.match(/--discord-token is required with `discord` notifier/))
+  )
+})
+
+test('--discord-channel-id is required on discord', t => {
+  t.plan(1)
+  getOptions([
+    '--npm-token=token1',
+    '--discord-token=token1',
+    '--notifier=discord'
+  ]).then(t.fail, err =>
     t.ok(err.output.match(/--discord-channel-id is required with `discord` notifier/))
   )
 })

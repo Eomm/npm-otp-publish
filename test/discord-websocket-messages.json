@@ -1,0 +1,504 @@
+{
+  "reply": [
+    {
+      "t": null,
+      "s": null,
+      "op": 10,
+      "d": {
+        "heartbeat_interval": 41250,
+        "_trace": [
+          "[\"gateway-prd-main-pkw7\",{\"micros\":0.0}]"
+        ]
+      }
+    },
+    {
+      "t": "READY",
+      "s": 1,
+      "op": 0,
+      "d": {
+        "v": 6,
+        "user_settings": {},
+        "user": {
+          "verified": true,
+          "username": "releasify-otp-bot",
+          "mfa_enabled": false,
+          "id": "782270540173934602",
+          "flags": 0,
+          "email": null,
+          "discriminator": "9679",
+          "bot": true,
+          "avatar": null
+        },
+        "shard": [
+          0,
+          1
+        ],
+        "session_id": "8ac152d91fb2bce9adc3f44e4e362cc4",
+        "relationships": [],
+        "private_channels": [],
+        "presences": [],
+        "guilds": [
+          {
+            "unavailable": true,
+            "id": "725613461949906985"
+          },
+          {
+            "unavailable": true,
+            "id": "795048969750970388"
+          }
+        ],
+        "guild_join_requests": [],
+        "geo_ordered_rtc_regions": [
+          "europe",
+          "russia",
+          "india",
+          "us-east",
+          "us-central"
+        ],
+        "application": {
+          "id": "782270540173934602",
+          "flags": 0
+        },
+        "_trace": [
+          "[\"gateway-prd-main-pkw7\",{\"micros\":117828,\"calls\":[\"discord-sessions-prd-2-18\",{\"micros\":116572,\"calls\":[\"start_session\",{\"micros\":60304,\"calls\":[\"api-prd-main-mx9b\",{\"micros\":57902,\"calls\":[\"get_user\",{\"micros\":5325},\"add_authorized_ip\",{\"micros\":1154},\"get_guilds\",{\"micros\":11453},\"coros_wait\",{\"micros\":0}]}]},\"guilds_connect\",{\"micros\":1,\"calls\":[]},\"presence_connect\",{\"micros\":36085,\"calls\":[]}]}]}]"
+        ]
+      }
+    },
+    {
+      "t": "GUILD_CREATE",
+      "s": 2,
+      "op": 0,
+      "d": {
+        "description": null,
+        "max_video_channel_users": 25,
+        "preferred_locale": "en-US",
+        "discovery_splash": null,
+        "members": [
+          {
+            "user": {
+              "username": "releasify-otp-bot",
+              "id": "782270540173934602",
+              "discriminator": "9679",
+              "bot": true,
+              "avatar": null
+            },
+            "roles": [
+              "782319290447036497"
+            ],
+            "premium_since": null,
+            "nick": null,
+            "mute": false,
+            "joined_at": "2020-11-28T18:57:33.648866+00:00",
+            "is_pending": false,
+            "hoisted_role": null,
+            "deaf": false
+          }
+        ],
+        "icon": "aa5437fc7d25642dddd776fe96af2562",
+        "large": true,
+        "afk_channel_id": null,
+        "default_message_notifications": 1,
+        "verification_level": 1,
+        "explicit_content_filter": 2,
+        "name": "fastify",
+        "splash": null,
+        "system_channel_id": "725613462373269567",
+        "member_count": 182,
+        "max_members": 100000,
+        "unavailable": false,
+        "vanity_url_code": null,
+        "mfa_level": 0,
+        "application_id": null,
+        "voice_states": [],
+        "region": "europe",
+        "afk_timeout": 300,
+        "lazy": true,
+        "banner": null,
+        "guild_hashes": {
+          "version": 1,
+          "roles": {
+            "omitted": false,
+            "hash": "1yYJUBQ9K/g"
+          },
+          "metadata": {
+            "omitted": false,
+            "hash": "o40PALDm1yY"
+          },
+          "channels": {
+            "omitted": false,
+            "hash": "JdvhvWxC904"
+          }
+        },
+        "features": [
+          "NEWS",
+          "COMMUNITY"
+        ],
+        "roles": [
+          {
+            "position": 0,
+            "permissions_new": "104189505",
+            "permissions": 104189505,
+            "name": "@everyone",
+            "mentionable": false,
+            "managed": false,
+            "id": "725613461949906985",
+            "hoist": false,
+            "color": 0
+          },
+          {
+            "position": 4,
+            "permissions_new": "2146959231",
+            "permissions": 2146959231,
+            "name": "admin",
+            "mentionable": true,
+            "managed": false,
+            "id": "725660830909202433",
+            "hoist": true,
+            "color": 1752220
+          },
+          {
+            "position": 3,
+            "permissions_new": "104320577",
+            "permissions": 104320577,
+            "name": "core team",
+            "mentionable": true,
+            "managed": false,
+            "id": "725967543029858364",
+            "hoist": false,
+            "color": 3447003
+          },
+          {
+            "position": 2,
+            "permissions_new": "104320593",
+            "permissions": 104320593,
+            "name": "channel-admin",
+            "mentionable": false,
+            "managed": false,
+            "id": "766792378207436830",
+            "hoist": false,
+            "color": 0
+          },
+          {
+            "tags": {
+              "bot_id": "782270540173934602"
+            },
+            "position": 1,
+            "permissions_new": "2048",
+            "permissions": 2048,
+            "name": "releasify-otp-bot",
+            "mentionable": false,
+            "managed": true,
+            "id": "782319290447036497",
+            "hoist": false,
+            "color": 0
+          }
+        ],
+        "system_channel_flags": 0,
+        "rules_channel_id": "784405961745891378",
+        "owner_id": "331316452533731328",
+        "presences": [],
+        "threads": [],
+        "channels": [
+          {
+            "type": 4,
+            "position": 0,
+            "permission_overwrites": [],
+            "name": "Canali testuali",
+            "id": "725613462373269565"
+          },
+          {
+            "type": 4,
+            "position": 0,
+            "permission_overwrites": [],
+            "name": "Canali vocali",
+            "id": "725613462373269566"
+          },
+          {
+            "type": 0,
+            "topic": null,
+            "rate_limit_per_user": 0,
+            "position": 1,
+            "permission_overwrites": [],
+            "parent_id": "725613462373269565",
+            "nsfw": false,
+            "name": "general",
+            "last_pin_timestamp": "2020-08-06T17:50:13.090000+00:00",
+            "last_message_id": "794413633182105620",
+            "id": "725613462373269567"
+          },
+          {
+            "type": 0,
+            "topic": "Private channel for the Fastify core team",
+            "rate_limit_per_user": 0,
+            "position": 2,
+            "permission_overwrites": [
+              {
+                "type": "role",
+                "id": "725613461949906985",
+                "deny_new": "1024",
+                "deny": 1024,
+                "allow_new": "0",
+                "allow": 0
+              },
+              {
+                "type": "role",
+                "id": "725967543029858364",
+                "deny_new": "0",
+                "deny": 0,
+                "allow_new": "1024",
+                "allow": 1024
+              }
+            ],
+            "parent_id": "725613462373269565",
+            "nsfw": false,
+            "name": "core-team",
+            "last_message_id": "794562796909887498",
+            "id": "725967871892652053"
+          },
+          {
+            "type": 0,
+            "topic": "Are you using Fastify and TypeScript? This is your channel.",
+            "rate_limit_per_user": 0,
+            "position": 3,
+            "permission_overwrites": [],
+            "parent_id": "725613462373269565",
+            "nsfw": false,
+            "name": "typescript",
+            "last_message_id": "790947072605814805",
+            "id": "767233407683002419"
+          },
+          {
+            "type": 0,
+            "topic": null,
+            "rate_limit_per_user": 0,
+            "position": 4,
+            "permission_overwrites": [],
+            "parent_id": "725613462373269565",
+            "nsfw": false,
+            "name": "mercurius-graphql",
+            "last_message_id": "785666747331772476",
+            "id": "776373475186049044"
+          },
+          {
+            "type": 0,
+            "topic": null,
+            "rate_limit_per_user": 0,
+            "position": 0,
+            "permission_overwrites": [
+              {
+                "type": "role",
+                "id": "725660830909202433",
+                "deny_new": "0",
+                "deny": 0,
+                "allow_new": "268659728",
+                "allow": 268659728
+              },
+              {
+                "type": "role",
+                "id": "725613461949906985",
+                "deny_new": "805763153",
+                "deny": 805763153,
+                "allow_new": "66560",
+                "allow": 66560
+              }
+            ],
+            "parent_id": "725613462373269565",
+            "nsfw": false,
+            "name": "welcome",
+            "last_message_id": "784406592274694144",
+            "id": "784405961745891378"
+          }
+        ],
+        "id": "725613461949906985",
+        "premium_subscription_count": 0,
+        "emojis": [
+          {
+            "roles": [],
+            "require_colons": true,
+            "name": "mindblown",
+            "managed": false,
+            "id": "750787659118411798",
+            "available": true,
+            "animated": true
+          }
+        ],
+        "premium_tier": 0,
+        "joined_at": "2020-11-28T18:57:33.648866+00:00",
+        "public_updates_channel_id": "725967871892652053"
+      }
+    },
+    {
+      "t": "GUILD_CREATE",
+      "s": 3,
+      "op": 0,
+      "d": {
+        "description": null,
+        "max_video_channel_users": 25,
+        "preferred_locale": "en-US",
+        "discovery_splash": null,
+        "members": [
+          {
+            "user": {
+              "username": "releasify-otp-bot",
+              "id": "782270540173934602",
+              "discriminator": "9679",
+              "bot": true,
+              "avatar": null
+            },
+            "roles": [
+              "795049155956965457"
+            ],
+            "premium_since": null,
+            "pending": false,
+            "nick": null,
+            "mute": false,
+            "joined_at": "2021-01-02T22:01:30.118317+00:00",
+            "is_pending": false,
+            "hoisted_role": null,
+            "deaf": false
+          }
+        ],
+        "icon": "44d5ab312e2d0671bb3baef8a25adac8",
+        "large": false,
+        "afk_channel_id": null,
+        "default_message_notifications": 0,
+        "verification_level": 0,
+        "explicit_content_filter": 0,
+        "name": "Server di Eomm",
+        "splash": null,
+        "system_channel_id": "795048975413542963",
+        "member_count": 2,
+        "max_members": 100000,
+        "unavailable": false,
+        "vanity_url_code": null,
+        "mfa_level": 0,
+        "application_id": null,
+        "voice_states": [],
+        "region": "europe",
+        "afk_timeout": 300,
+        "lazy": true,
+        "banner": null,
+        "guild_hashes": {
+          "version": 1,
+          "roles": {
+            "omitted": false,
+            "hash": "Xz9qmctDcmc"
+          },
+          "metadata": {
+            "omitted": false,
+            "hash": "uvxomq8TBOE"
+          },
+          "channels": {
+            "omitted": false,
+            "hash": "JefXVwDbB5E"
+          }
+        },
+        "features": [],
+        "roles": [
+          {
+            "position": 0,
+            "permissions_new": "104320577",
+            "permissions": 104320577,
+            "name": "@everyone",
+            "mentionable": false,
+            "managed": false,
+            "id": "795048969750970388",
+            "hoist": false,
+            "color": 0
+          },
+          {
+            "tags": {
+              "bot_id": "782270540173934602"
+            },
+            "position": 1,
+            "permissions_new": "18432",
+            "permissions": 18432,
+            "name": "releasify-otp-bot",
+            "mentionable": false,
+            "managed": true,
+            "id": "795049155956965457",
+            "hoist": false,
+            "color": 0
+          }
+        ],
+        "system_channel_flags": 0,
+        "rules_channel_id": null,
+        "owner_id": "401404362695639041",
+        "presences": [],
+        "threads": [],
+        "channels": [
+          {
+            "type": 4,
+            "position": 0,
+            "permission_overwrites": [],
+            "name": "Canali testuali",
+            "id": "795048970421403698"
+          },
+          {
+            "type": 4,
+            "position": 0,
+            "permission_overwrites": [],
+            "name": "Canali vocali",
+            "id": "795048970421403699"
+          },
+          {
+            "type": 0,
+            "topic": null,
+            "rate_limit_per_user": 0,
+            "position": 0,
+            "permission_overwrites": [],
+            "parent_id": "795048970421403698",
+            "name": "generale",
+            "last_message_id": "795049156372201522",
+            "id": "795048975413542963"
+          },
+          {
+            "user_limit": 0,
+            "type": 2,
+            "position": 0,
+            "permission_overwrites": [],
+            "parent_id": "795048970421403699",
+            "name": "Generale",
+            "id": "795048975413542964",
+            "bitrate": 64000
+          },
+          {
+            "type": 0,
+            "topic": null,
+            "rate_limit_per_user": 0,
+            "position": 1,
+            "permission_overwrites": [
+              {
+                "type": "role",
+                "id": "795048969750970388",
+                "deny_new": "1024",
+                "deny": 1024,
+                "allow_new": "0",
+                "allow": 0
+              },
+              {
+                "type": "role",
+                "id": "795049155956965457",
+                "deny_new": "0",
+                "deny": 0,
+                "allow_new": "1024",
+                "allow": 1024
+              }
+            ],
+            "parent_id": "795048970421403698",
+            "nsfw": false,
+            "name": "bot-spamming",
+            "last_message_id": "795066628936040479",
+            "id": "12345"
+          }
+        ],
+        "id": "795048969750970388",
+        "premium_subscription_count": 0,
+        "emojis": [],
+        "premium_tier": 0,
+        "joined_at": "2021-01-02T22:01:30.118317+00:00",
+        "public_updates_channel_id": null
+      }
+    }
+  ]
+}

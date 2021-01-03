@@ -40,6 +40,10 @@ test('passing empty arguments should return defaults', t => {
       actor: undefined,
       releaseTeam: undefined
     },
+    discord: {
+      token: undefined,
+      channelId: undefined
+    },
     timeout: 15 * 60 * 1000
   })
 })
@@ -61,6 +65,8 @@ test('passing all arguments with env should succeed', async t => {
     repoName,
     githubActor: 'me',
     githubReleaseTeam: 'team',
+    discordToken: 'dt',
+    discordChannelId: 'dc',
     timeout: 1
   })
   const version = {
@@ -90,6 +96,10 @@ test('passing all arguments with env should succeed', async t => {
     githubIssue: {
       actor: 'me',
       releaseTeam: 'team'
+    },
+    discord: {
+      token: 'dt',
+      channelId: 'dc'
     },
     timeout: 60 * 1000
   })
