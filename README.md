@@ -88,11 +88,13 @@ jobs:
 | npm_token           | yes      |              | npm token used to publish                                  |
 | npm_user            | no       |              | npm user name (used on messages)                           |
 | version_url         | no       |              | URL to the release on GitHub                               |
-| notifier            | no       | github-issue | notifier to be used. Options are `console`, `github-issue` |
+| notifier            | no       | github-issue | notifier to be used. Options are `console`, `github-issue`, `discord` |
 | timeout             | no       | 15           | timeout (in minutes) before the Action forcefully stops    |
 | github_token        | no       |              | github token (**required if notifier is github-issue**)    |
 | github_actor        | no       |              | user who triggered the action                              |
 | github_release_team | no       |              | release team to assign the issue                           |
+| discord_token       | no       |              | discord auth token (**required if notifier is discord**)   |
+| discord_channel_id  | no       |              | discord channel where send the message to (**required if notifier is discord**) |
 
 ## How it works
 
