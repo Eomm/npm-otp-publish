@@ -105,11 +105,11 @@ test('should create and close issue', async t => {
     .get('/v7/gateway/bot')
     .reply(200, {
       url: 'ws://127.0.0.1:3000/',
-      shards: 9,
+      shards: 1,
       session_start_limit: {
-        total: 1000,
-        remaining: 999,
-        reset_after: 14400000,
+        total: 1,
+        remaining: 1,
+        reset_after: 1,
         max_concurrency: 1
       }
     })
@@ -131,8 +131,9 @@ test('should create and close issue', async t => {
   const notifier = new DiscordNotifier(config, mockLogger)
   await notifier.notify('http://ngrokUrl')
   await notifier.end()
-  await wss.close()
+  await new Promise(resolve => setTimeout(resolve, 2000))
   scope.done()
-  t.ok(true)
+  t.ok(true, 'completed')
   t.end()
+  await wss.close()
 })
